@@ -21,9 +21,10 @@ F ->id
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 char input[10];
-int i,error;
+int i,error,a,b;
 
 void E();
 void T();
@@ -62,10 +63,13 @@ void Tp(){
 		i++;
 		F();
 		Tp();
+	}else if(isdigit(input[i])){
+		F();
+		Tp();
 	}
 }
 void F(){
-	if (isalnum(input[i])){
+	if (isdigit(input[i])){
 		i++;
 	}else{
 		error=1;
