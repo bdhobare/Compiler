@@ -4,8 +4,7 @@
 void yyerror(char *);
 %}
 %%
-a	{return A;}
-b	{return B;}
+(a*)b\\n	{return A;}
 [ \t]	;
 .	yyerror("Unknown character");
 %%

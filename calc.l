@@ -14,7 +14,7 @@
 
 [-+\n]      { return *yytext; }
 
-[ \t]       ;       /* skip whitespace */
+[ \t]       ; 
 
 .           yyerror("Unknown character");
 

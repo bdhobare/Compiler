@@ -765,7 +765,7 @@ YY_RULE_SETUP
 case 3:
 YY_RULE_SETUP
 #line 17 "calc.l"
-;       /* skip whitespace */
+; 
 	YY_BREAK
 case 4:
 YY_RULE_SETUP

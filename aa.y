@@ -10,9 +10,9 @@
 %token B
 
 %%
-program:
-	B 	{ printf("Count: %d\n",count);}
-	|a_expr program
+expr:
+	a_expr expr '\n'	{ printf("Count: %d\n",count);}
+	|B 
 	;
 a_expr:
 	A	{++count;}
