@@ -4,12 +4,6 @@ E -> E+T | T
 T -> T*F | F
 F -> id
 
-or 
-
-E->E+E
-E-<E*E
-E->id
-
 
 After removing left recursion
 E -> TE'
@@ -24,7 +18,7 @@ F ->id
 #include <stdlib.h>
 
 char input[10];
-int i,error,a,b;
+int i,error;
 
 void E();
 void T();
